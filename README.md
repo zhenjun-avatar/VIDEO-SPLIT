@@ -40,7 +40,7 @@ git remote -v
 │   ├── core/                 # pydantic-settings (shared with .env)
 │   ├── env.example           # API keys + DEFAULT_MODEL
 │   ├── tools/
-│   │   ├── vedio_split/      # pipeline, CLI
+│   │   ├── video_split/      # pipeline, CLI
 │   │   ├── llm.py            # OpenAI-compatible providers (DeepSeek / Qwen / OpenAI)
 │   │   ├── runtime_logging.py
 │   │   └── data/             # e.g. sample input video
