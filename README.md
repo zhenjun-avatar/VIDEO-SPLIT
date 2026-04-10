@@ -1,27 +1,8 @@
-# Video shorts pipeline (`vedio_split`)
+# Video shorts pipeline (`video_split`)
 
 Upstream repository: **[zhenjun-avatar/VIDEO-SPLIT](https://github.com/zhenjun-avatar/VIDEO-SPLIT)** — clone URL: `https://github.com/zhenjun-avatar/VIDEO-SPLIT.git`.
 
-CLI pipeline that **transcribes** a video, uses an **LLM** to plan **15–90 second** clips (sessions / coherent paragraphs), **cuts** them with **ffmpeg**, and writes **titles + descriptions** plus a **manifest**.
-
-### Connect this folder to GitHub
-
-If this directory is not a git repo yet:
-
-```bash
-git init
-git remote add origin https://github.com/zhenjun-avatar/VIDEO-SPLIT.git
-git branch -M main
-# after commit:
-git push -u origin main
-```
-
-If `origin` already exists, point it at the same URL:
-
-```bash
-git remote set-url origin https://github.com/zhenjun-avatar/VIDEO-SPLIT.git
-git remote -v
-```
+CLI pipeline that **transcribes** a video, uses an **LLM** to plan **10–100 second** clips (sessions / coherent paragraphs), **cuts** them with **ffmpeg**, and writes **titles + descriptions** plus a **manifest**.
 
 ## What it does
 
@@ -65,7 +46,7 @@ venv\Scripts\pip install -r ../../requirements.txt
 copy env.example .env
 # Edit .env: at least DEFAULT_MODEL and the matching API key.
 
-venv\Scripts\python -m tools.vedio_split --input tools/data/Duke.mp4 --out outputs/duke_shorts
+venv\Scripts\python -m tools.video_split --input tools/data/Duke.mp4 --out outputs/duke_shorts
 ```
 
 Use a smaller/faster Whisper model for tests: `--whisper-model tiny`. For quality: `--whisper-model small` or `medium`.
@@ -105,4 +86,4 @@ Do not commit API keys or `.env`.
 
 ## License
 
-MIT
+MIT License
