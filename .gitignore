@@ -181,4 +181,6 @@ src/agent/logs/
 src/agent/report/
 src/agent/outputs/
 src/agent/tools/data/batch_runs/
+# Sample inputs — too large for GitHub (>100MB); place your own .mp4 under tools/data/
+src/agent/tools/data/*.mp4
 src/agent/debug/
